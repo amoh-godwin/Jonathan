@@ -1,0 +1,234 @@
+@media only screen and (min-width: 601px) {
+    .post-article {
+    padding: 16px 2.5%; !important
+    }
+    
+    .form {
+        padding: 16px 2.5%;
+        vertical-align: middle; !important
+    }
+    
+    .nav {
+        display: inherit;
+    }
+    
+    .collapse {
+        display: none;
+    }
+    
+    #container {
+        width: 80%;
+        margin: 0 auto;
+        background-color: white;;
+    }
+    
+    #chat_box {
+        width: 90%;
+        margin: auto;
+        height: 400px;
+    }
+    
+    #chat_data {
+        width: 100%;
+        padding: 8px 20px;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    
+    #reciever {
+    }
+    
+    #sender {
+    }
+    
+    
+    input[type = 'text'] {
+        width: 100%;
+        height: 35px;
+        border: 1px solid grey;
+        border-radius: 5px;
+    }
+    
+    input[type = 'submit'] {
+        width: 100%;
+        height: 35px;
+        border: 1px solid grey;
+        border-radius: 5px;
+    }
+    
+    textarea {
+        width: 100%;
+        border: 1px solid grey;
+        border-radius: 5px;
+    }
+    
+}
+
+@media only screen and (min-width:994px) {
+    .post-article {
+    padding: 16px 5%; !important
+    }
+    
+    .form {
+        padding: 16px 25%;
+        vertical-align: middle; !important
+    }
+
+}
+
+@media only screen and (max-width:600px) {
+    .post-article {
+    padding: 16px 2.5%;
+    }
+    
+    .nav {
+        display: none;
+    }
+    
+    .collapse {
+        display:block;
+    }
+    
+    #container {
+        width: 50%;
+        margin: 0 auto;
+        background-color: white;
+        padding: 2opx;
+    }
+    
+    #chat_box {
+        width: 90%;
+        height: 400px;
+    }
+    
+    #chat_data {
+        width: 100%;
+        padding: 16px;
+        margin-bottom: 5px;
+        border-bottom: 1px solid grey;
+        font-weight: bold;
+    }
+    
+    input[type = 'text'] {
+        width: 100%;
+        height: 35px;
+        border: 1px solid grey;
+        border-radius: 5px;
+    }
+    
+    input[type = 'submit'] {
+        width: 100%;
+        height: 35px;
+        border: 1px solid grey;
+        border-radius: 5px;
+    }
+    
+    textarea {
+        width: 100%;
+        border: 1px solid grey;
+        border-radius: 5px;
+    }
+}
+
+body {
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+article {
+    padding-right: 16px;
+}
+
+
+.j-aside {
+    padding-top: 103px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.j-ldisplay-middle {
+        padding-top: 31%;
+        padding-left: 40%;
+    }    
+
+.j-sdisplay-middle {
+        padding: 25% 34%;
+    }
+    
+.j-height-500 {
+    height:500px;
+}
+
+.j-height-400 {
+    height:400px;
+}
+
+.j-height-40 {
+    height:40px;
+}
+
+.j-padding-a16 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+}
+
+.j-padding-a32 {
+    padding: 32px;
+}
+
+.j-pad-bl16 {
+    padding-left: 16px;
+    padding-bottom: 16px;
+}
+
+.j-pad-16 {
+    padding: 16px;
+}
+
+.j-pad-v16 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.j-pad-h16 {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.clear {
+    clear: left;
+}
+
+.j-card {
+    height: 500px;
+}
+
+.j-al-right {
+    text-align: right;
+}
+
+.j-al-left {
+    text-align: left;
+}
+
+.j-ul ul {
+    display: inline;
+}
+
+.j-ul li{
+    list-style-type: none;
+    
+}
+
+.j-placeholder {
+        height: 170px;
+    }
+
+footer {
+    background-color: white;
+    clear: left;
+}

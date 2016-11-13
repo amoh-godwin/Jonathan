@@ -1,0 +1,61 @@
+<?php
+
+include('conn.php');
+
+?>
+
+<!Doctype html>
+<html>
+    <head>
+        <meta >
+        <title>Jonathan</title>
+        <link href="John.css" rel="stylesheet" />
+        <link href="w3.css" rel="stylesheet" />
+    </head>
+    <body class="w3-light-grey">
+        <div class="" id="container">
+            <div>
+                <ul class="w3-navbar w3-blue">
+                    <li><a>Maxwell</a>
+                        <ul>
+                            <li><i>active</i></li>
+                            <li>typing...</li>
+                        </ul>
+                    </li>
+                    <li class="w3-right"><a><i></i>info.</a></li>
+                </ul>
+                
+            </div>
+            <div class="w3-padding-16" id="chat_box">
+                <?php 
+                $sql = "select * from chat where snd = $snd and recpt = $recpt";
+                ?>
+                <div class="w3-margin-bottom" style="width:100%;">
+                    <ul class="j-al-right w3-ul">
+                        <li class="">
+                            <a class="w3-green w3-padding-8 w3-padding-small w3-round">
+                                Thank you God Almighty <span class="w3-tiny">3:15 am</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="w3-margin-bottom" style="width:100%;">
+                    <ul class="j-al-left w3-ul">
+                        <li class="">
+                            <a class="w3-white w3-border w3-padding-8 w3-padding-small w3-round">
+                               <span class="w3-tiny">3:16 am</span> Abba Father, Abba Father.
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                
+            </div>
+            <form action="index.php" method="post">
+                <textarea name="message"></textarea>
+                <input type="submit" name="submit" value="send" class="w3-btn">
+            </form>
+        </div>
+    </body>
+</html>
