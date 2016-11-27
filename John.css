@@ -16,6 +16,25 @@
         display: none;
     }
     
+    .j-scontainer {
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 20%;
+        vertical-align: middle;
+    }
+    
+    .j-f-inp {
+        
+    }
+    
+    .j-btn {
+        width:10%;
+    }
+    
+    .j-inp {
+        width:90%;
+    }
+    
     #container {
         width: 80%;
         margin: 0 auto;
@@ -73,6 +92,26 @@
         padding: 16px 25%;
         vertical-align: middle; !important
     }
+    
+    .j-btn {
+        width:5%;
+    }
+    
+    .j-inp {
+        width:95%;
+    }
+    
+    .j-scontainer {
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 10%;
+        vertical-align: middle;
+    }
+    
+    .j-f-inp {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
 }
 
@@ -90,7 +129,7 @@
     }
     
     #container {
-        width: 50%;
+        width: 90%;
         margin: 0 auto;
         background-color: white;
         padding: 2opx;
@@ -107,6 +146,25 @@
         margin-bottom: 5px;
         border-bottom: 1px solid grey;
         font-weight: bold;
+    }
+    
+    .j-scontainer {
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 20%;
+        vertical-align: middle;
+    }
+    
+    .j-f-inp {
+        
+    }
+    
+    .j-btn {
+        width:10%;
+    }
+    
+    .j-inp {
+        width:90%;
     }
     
     input[type = 'text'] {
@@ -199,6 +257,10 @@ article {
     padding-right: 16px;
 }
 
+.j-fpad {
+    padding: 5px 4px;
+}
+
 .clear {
     clear: left;
 }
@@ -220,6 +282,7 @@ article {
 }
 
 .j-ul li{
+    display: inline;
     list-style-type: none;
     
 }

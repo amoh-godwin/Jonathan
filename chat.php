@@ -37,7 +37,7 @@ if(isset($_GET['recpt'])) {
                         if($reciever == $snd) {
                             echo "
                             <div class='w3-margin-bottom' style='width:100%;'>
-                                <ul class='j-al-left w3-ul>
+                                <ul class='j-al-left j-ul>
                                     <li class=''>
                                         <a class='w3-white w3-border w3-padding-8 w3-padding-small w3-round'>
                                         <span class='w3-tiny'>$time</span> $msg
@@ -50,7 +50,7 @@ if(isset($_GET['recpt'])) {
                         
                         echo "
                         <div class='w3-margin-bottom' style='width:100%;'>
-                    <ul class='j-al-right w3-ul>
+                    <ul class='j-al-right j-ul>
                         <li class=''>
                             <a class='w3-green w3-padding-8 w3-padding-small w3-round'>
                                 $msg <span class='w3-tiny'>$time</span>

@@ -27,13 +27,30 @@ if(isset($_GET['recpt'])) {
         <title>Jonathan</title>
         <link href="John.css" rel="stylesheet" />
         <link href="w3.css" rel="stylesheet" />
+        <script>
+            function showStatus(str) {
+                if(str.length == 0) {
+                    document.getElementById("status").innerHTML = "";
+                    return;
+                } else {
+                    var xmlhttp = new XMLHttpRequest();
+                    xmlhttp.onreadystatechange = function() {
+                        if(xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                            document.getElementById("status").innerHTML = xmlhttp.responseText;
+                        }
+                    };
+                    xmlhttp.open("GET", "getStatus.php?q"+str, true);
+                    xmlhttp.send();
+                }
+            }
+        </script>
     </head>
     <body>
 
 
           <form action="form.php?snd=<?php echo $snd; ?>&&recpt=<?php echo $recpt; ?>" method="post">
-                <textarea name="message"></textarea>
-                <input type="submit" name="submit" value="send" class="w3-btn w3-margin-top">
+                    <textarea name="message"></textarea>
+                   <input type="submit" name="submit" value="send" class="w3-btn w3-blue" onkeyup="showStatus(this.value)">
                 <?php
                 
                 if(isset($_POST['submit'])) {
@@ -44,7 +61,7 @@ if(isset($_GET['recpt'])) {
                     // inserting into sender's table
                     
                     if($snd_dbInsert = $conn->query($snd_dbsql)) {
-                        echo "<embed loop='false' src='delivered.wav' hidden='true' autoplay='true' />";
+                        echo "<audio><source autoplay='true'/></audio>";
                         
                     } else {
                         echo "God is in Control " .$conn->error;

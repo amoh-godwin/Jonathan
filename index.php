@@ -5,16 +5,20 @@ include('conn.php');
 include('functions.php');
 
 if(isset($_GET['snd'])) {
-    $snd = $_GET['snd'];
-    $snd_db = $snd."_chat";
+    //$snd = $_GET['snd'];
+    //$snd_db = $snd."_chat";
+} else {
+    //redirect_to('udesign.php');
 }
 
 if(isset($_GET['recpt'])) {
-    $recpt = $_GET['recpt'];
-    $recpt_db = $recpt."_chat";
+   // $recpt = $_GET['recpt'];
+   // $recpt_db = $recpt."_chat";
+    
 }
 
-
+//if(isset($_GET['q'])) {
+   // $str = $_GET['q'];
 
 ?>
 
@@ -25,6 +29,7 @@ if(isset($_GET['recpt'])) {
         <title>Jonathan</title>
         <link href="John.css" rel="stylesheet" />
         <link href="w3.css" rel="stylesheet" />
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" />
         <script>
             
             var query = window.location.search;
@@ -52,22 +57,23 @@ if(isset($_GET['recpt'])) {
     <body class="w3-light-grey" onload="postRefresh();">
         <div class="" id="container">
             <div>
-                <ul class="w3-navbar w3-green">
-                    <li><a><?php echo $recpt; ?></a>
-                        <ul>
-                            <li><i>active</i></li>
-                            <li id="status">typing...</li>
-                        </ul>
-                    </li>
-                    <li class="w3-right"><a><i></i>info.</a></li>
+                <ul class="w3-navbar w3-blue">
+                    <li><a><i class="fa fa-user-circle fa-lg w3-padding-small"></i><?php echo //$recpt; ?></a></li>
+                    <li class="w3-right w3-text-white w3-hover-white"><a><i class="fa fa-info-circle w3-hover-text-blue"></i></a></li>
                 </ul>
-                
+                <div>
+                    <ul class="w3-navbar w3-blue">
+                        <li><i class="fa fa-circle w3-text-green w3-padding-small"></i></li>
+                        <li><?php echo //$str; ?></li>
+                    </ul>
+                </div>
             </div>
             
            
-            <div id="chat_box"></div>
+            <div id="chat_box" class="">
+            </div>
                 
-            <iframe src="form.php?snd=<?php echo $snd; ?>&&recpt=<?php echo $recpt; ?>" style="border: none" width="100%">
+            <iframe src="form.php?snd=<?php echo //$snd; ?>&&recpt=<?php echo //$recpt; ?>" style="border: none" width="100%">
             </iframe>
         </div>
     </body>
