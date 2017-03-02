@@ -45,6 +45,7 @@
         width: 90%;
         margin: auto;
         height: 400px;
+        scroll: vertical;
     }
     
     #chat_data {
@@ -61,19 +62,19 @@
     }
     
     
-    input[type = 'text'] {
+    /*input[type = 'text'] {
         width: 100%;
         height: 35px;
         border: 1px solid grey;
         border-radius: 5px;
-    }
+    }*/
     
-    input[type = 'submit'] {
+    /*input[type = 'submit'] {
         width: 100%;
         height: 35px;
         border: 1px solid grey;
         border-radius: 5px;
-    }
+    }*/
     
     textarea {
         width: 100%;
