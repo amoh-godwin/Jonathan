@@ -1,0 +1,14 @@
+.click {
+    width: 100%;
+}
+
+.click li {
+    list-style-type: none;
+    display: inline;
+    float: left;
+}
+
+.click li a:hover {
+    background-color: whitesmoke;
+    color: black;
+}

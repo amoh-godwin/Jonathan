@@ -2,7 +2,7 @@
 
 include('conn.php');
 
-include('functions.php');
+include('function.php');
 
 if(isset($_GET['snd'])) {
     $snd = $_GET['snd'];
@@ -25,8 +25,8 @@ if(isset($_GET['recpt'])) {
     <head>
         <meta >
         <title>Jonathan</title>
-        <link href="John.css" rel="stylesheet" />
-        <link href="w3.css" rel="stylesheet" />
+        <link href="../css/John.css" rel="stylesheet" />
+        <link href="../css/w3.css" rel="stylesheet" />
         <script>
             function showStatus(str) {
                 if(str.length == 0) {
@@ -36,10 +36,10 @@ if(isset($_GET['recpt'])) {
                     var xmlhttp = new XMLHttpRequest();
                     xmlhttp.onreadystatechange = function() {
                         if(xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-                            document.getElementById("status").innerHTML = xmlhttp.responseText;
+                            xmlhttp.responseText;
                         }
                     };
-                    xmlhttp.open("GET", "getStatus.php?q"+str, true);
+                    xmlhttp.open("GET", "getStatus.php?q="+str, true);
                     xmlhttp.send();
                 }
             }
@@ -49,8 +49,8 @@ if(isset($_GET['recpt'])) {
 
 
           <form action="form.php?snd=<?php echo $snd; ?>&&recpt=<?php echo $recpt; ?>" method="post">
-                    <textarea name="message"></textarea>
-                   <input type="submit" name="submit" value="send" class="w3-btn w3-blue" onkeyup="showStatus(this.value)">
+              <textarea type="text" class="" name="message" onkeyup="showStatus(this.value)"></textarea>
+                   <input type="submit" name="submit" value="send" class="w3-btn w3-blue">
                 <?php
                 
                 if(isset($_POST['submit'])) {
